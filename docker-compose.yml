@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  vue:
+    build: .
+    container_name: vue
+    command: npm run serve
+    ports:
+      - "80:8080"
