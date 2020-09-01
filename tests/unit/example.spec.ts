@@ -6,7 +6,7 @@ describe('Channel.vue', () => {
   it('renders props.msg when passed', () => {
     const msg = 'new message';
     const wrapper = shallowMount(Channel, {
-      props: { msg },
+      propsData: { msg },
     });
     expect(wrapper.text()).toMatch(msg);
   });
@@ -16,7 +16,7 @@ describe('Group.vue', () => {
   it('renders props.msg when passed', () => {
     const msg = 'new message';
     const wrapper = shallowMount(Group, {
-      props: { msg },
+      propsData: { msg },
     });
     expect(wrapper.text()).toMatch(msg);
   });

@@ -7,15 +7,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { Component, Vue } from 'vue-property-decorator';
 import Channel from '@/components/Channel.vue';
 import Group from '@/components/Group.vue';
 
-export default defineComponent({
-  name: 'Home',
+@Component({
   components: {
     Channel,
     Group,
   },
-});
+})
+export default class Home extends Vue {}
 </script>
