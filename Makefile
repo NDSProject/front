@@ -1,5 +1,5 @@
 all:
-	@docker-compose up --build
+	@docker-compose --file docker-compose.dev.yml up --build
 
 run:
 	@docker run --push 80:8080 fazenda/nds-front

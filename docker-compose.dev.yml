@@ -2,8 +2,11 @@ version: '3'
 
 services:
   vue:
-    build: fazenda/nds-front
+    build: .
     container_name: vue
     command: npm run serve
     ports:
       - "80:8080"
+    volumes:
+      - ./src:/usr/src/src/
+      - ./public:/usr/src/public
